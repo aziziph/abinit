@@ -1,0 +1,217 @@
+/* Set margin on top of the page */
+body {
+  margin-top: 40px;
+}
+
+#topheader {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 50px;
+  margin-bottom: 30px; /* Add margin between the shortcut icons and the carousel */
+}
+
+.shortcut {
+  margin-right: 50px;
+  margin-bottom: 0px; /* Add margin to the bottom of each shortcut */
+}
+
+.icon-container {
+  text-align: center;
+}
+
+/* Set custom width and height for each shortcut item */
+.shortcut:nth-child(1) .shortcut-img {
+  width: 300px;
+  height: auto;
+}
+
+.shortcut:nth-child(2) .shortcut-img {
+  width: 50px;
+  height: auto;
+}
+
+.shortcut:nth-child(3) .shortcut-img {
+  width: 50px;
+  height: auto;
+}
+
+.shortcut:nth-child(4) .shortcut-img {
+  width: 50px;
+  height: auto;
+}
+
+.shortcut:nth-child(5) .shortcut-img {
+  width: 50px;
+  height: auto;
+}
+
+.shortcut:nth-child(6) .shortcut-img {
+  width: 50px;
+  height: auto;
+}
+
+.shortcut:nth-child(7) .shortcut-img {
+  width: 50px;
+  height: auto;
+}
+
+.shortcut:nth-child(8) .shortcut-img {
+  width: 50px;
+  height: auto;
+}
+
+.title {
+  display: block;
+  font-size: 12px;
+  color: #F18F34; /* Set the color to orange */
+}
+
+/* Set the width of the carousel container to 30% of the viewport width */
+.carousel-container {
+  max-width: 30vw;
+  margin: 0 auto; /* Center the carousel horizontally */
+  position: relative; /* Add position relative to create a stacking context */
+  margin-top: 50px;
+}
+
+/* Set the width of the images to 100% of their container */
+.carousel-container .carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+.separator-line1 {
+  border-top: 4px solid #F18F34; /* Increase the thickness by changing the pixel value */
+  width: calc(100% - 400px); /* Adjust the width to accommodate margins */
+  margin: 30px auto; /* Set top and bottom margin to 20px, and center horizontally */
+  margin-top: -80px
+}
+
+.separator-line2 {
+  border-top: 4px solid #F18F34; /* Increase the thickness by changing the pixel value */
+  width: calc(100% - 550px); /* Adjust the width to accommodate margins */
+  margin: 30px auto; /* Set top and bottom margin to 20px, and center horizontally */
+  margin-left: 350px;
+}
+.icon-bar-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 200px;
+}
+
+.icon-bar {
+  margin-top: 10px;
+}
+
+.icon-bar img {
+  height: 30px;
+}
+
+.abinit-info {
+    margin-top: 10px; /* Adjust as needed */
+    margin-left: 400px; /* Adjust left margin as needed */
+    margin-right: 400px; /* Adjust right margin as needed */
+}
+.abinit-info .toolong .more-link {
+    color: #F18F34;
+    font-weight: bold;
+    text-decoration: none;
+}
+.abinit-info .toolong .more-link,
+.abinit-info .toolong .less-link {
+    color: #F18F34;
+    font-weight: bold;
+    text-decoration: none;
+}
+.toolong {
+    font-size: 14px; /* Adjust font size */
+}
+
+.toolong span {
+    display: block;
+    margin-bottom: 10px; /* Adjust spacing between paragraphs */
+}
+
+.details {
+    display: none; /* Hide details by default */
+}
+.abinit-info h2 {
+    font-size: 16px; /* Example font size */
+    color: black; /* Example color */
+    font-weight: bold; /* Example font weight */
+    margin-bottom: 10px; /* Example bottom margin */
+}
+
+.lower_block {
+    margin-top: -20px; /* Adjust as needed */
+    margin-left: 400px; /* Adjust left margin as needed */
+    margin-right: 500px; /* Adjust right margin as needed */
+}
+.lower_block h4 {
+    font-size: 14px; /* Example font size */
+    color: black; /* Example color */
+    font-weight: bold; /* Example font weight */
+    margin-bottom: 10px; /* Example bottom margin */
+    margin-left: 40px;
+}
+
+.footer_desc {
+    font-size: 12px;
+    color: #F18F34; /* Set the color to orange */
+}
+
+.footer_desc ul li a {
+    color: #F18F34; /* Set the color of links inside the footer_desc to orange */
+    margin-left: 0px;
+}
+.carousel-indicators {
+  position: absolute;
+  top: -10px; /* Adjust the distance from the bottom */
+}
+.carousel-indicators li {
+  width: 8px; /* Set width of indicators */
+  height: 8px; /* Set height of indicators */
+  margin: 0 3px; /* Adjust margin between indicators */
+  border-radius: 50%; /* Make indicators round */
+  background-color: black; /* Set default background color */
+  border: 1px solid #fff; /* Add border to indicators */
+  border: 4px solid #9acfea; /* Add border to indicators with light blue color
+  */
+}
+
+.carousel-indicators .active {
+  background-color: black; /* Set background color for active indicator */
+}
+.content-bottom2 {
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-bottom: 0px; /* Add margin to the bottom of each shortcut */
+  margin-bottom: 10px; /* Example bottom margin */
+}
+.content-sponsors img {
+  height: 30px;
+}
+.content {
+  font-size: 5px; /* Example font size */
+  color: gray; /* Example color */
+  font-weight: bold; /* Example font weight */
+}
+
+.LatestVersion {
+  position: absolute;
+  top: 30px; /* Adjust the distance from the bottom */
+  left: 40px;
+}
+.blink_me {
+        animation: blinker 1s linear infinite;
+    }
+    @keyframes blinker {
+        50% {
+            opacity: 0;
+        }
+    }
