@@ -83,7 +83,7 @@ body {
 
 .separator-line1 {
   border-top: 4px solid #F18F34; /* Increase the thickness by changing the pixel value */
-  width: calc(100% - 400px); /* Adjust the width to accommodate margins */
+  width: calc(100% - 800px); /* Adjust the width to accommodate margins */
   margin: 30px auto; /* Set top and bottom margin to 20px, and center horizontally */
   margin-top: -80px
 }
