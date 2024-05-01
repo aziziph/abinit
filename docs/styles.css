@@ -215,3 +215,9 @@ body {
             opacity: 0;
         }
     }
+
+.latest{
+  position: absolute;
+  top: 30px; /* Adjust the distance from the bottom */
+  left: 400px;
+}
