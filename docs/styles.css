@@ -221,3 +221,13 @@ body {
   top: 30px; /* Adjust the distance from the bottom */
   left: 400px;
 }
+.latest:1th-child(1) .latest-img {
+  width: 50px;
+  height: auto;
+}
+.latest h2 {
+    font-size: 16px; /* Example font size */
+    color: black; /* Example color */
+    font-weight: bold; /* Example font weight */
+    margin-bottom: 10px; /* Example bottom margin */
+}
