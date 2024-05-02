@@ -91,7 +91,8 @@ body {
 .separator-line2 {
   border-top: 4px solid #F18F34; /* Increase the thickness by changing the pixel value */
   width: calc(100% - 550px); /* Adjust the width to accommodate margins */
-  margin: 30px auto; /* Set top and bottom margin to 20px, and center horizontally */
+  margin: 200px auto; /* Set top and bottom margin to 20px, and center
+  horizontally */
   margin-left: 350px;
 }
 .icon-bar-container {
@@ -218,16 +219,22 @@ body {
 
 .latest{
   position: absolute;
-  top: 30px; /* Adjust the distance from the bottom */
+  top: 150px; /* Adjust the distance from the bottom */
   left: 400px;
 }
-.latest:1th-child(1) .latest-img {
-  width: 50px;
+.latest-img {
+  width: 40px;
   height: auto;
 }
 .latest h2 {
-    font-size: 16px; /* Example font size */
+    font-size: 20px; /* Example font size */
     color: black; /* Example color */
     font-weight: bold; /* Example font weight */
     margin-bottom: 10px; /* Example bottom margin */
+}
+.available h2{
+  font-size: 20px; /* Example font size */
+  position: absolute;
+  top: 400px; /* Adjust the distance from the bottom */
+  left: 400px;
 }
