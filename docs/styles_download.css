@@ -238,3 +238,10 @@ body {
   top: 400px; /* Adjust the distance from the bottom */
   left: 400px;
 }
+
+.release{
+  font-size: 20px; /* Example font size */
+  position: absolute;
+  top: 250px; /* Adjust the distance from the bottom */
+  left: 400px;
+}
