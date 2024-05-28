@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABINIT</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"  crossorigin="anonymous" />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./styles_download.css" rel="stylesheet"> <!-- Link to your
+  external CSS file -->
+</head>
+
+<body>
+<div id="topheader">
+    <div class="shortcut">
+            <div class="icon-container">
+                <img alt="ABINIT" class="shortcut-img" src="./logo/logo.png" title="" />
+                <span class="title"></span>
+            </div>
+    </div>
+    <div class="shortcut">
+        <a href="https://www.abinit.org/psp-tables">
+            <div class="icon-container">
+                <img alt="Pseudo and atomic data" class="shortcut-img" src="./img/Pseudos.png" title="Pseudo & atomic data" />
+                <span class="title">Pseudos &amp; PAW data</span>
+            </div>
+        </a>
+    </div>
+    <div class="shortcut">
+        <a href="https://docs.abinit.org/variables">
+            <div class="icon-container">
+                <img alt="input variables" class="shortcut-img" src="./img/input_variables.png" title="Input variables" />
+                <span class="title">Input variables </span>
+            </div>
+        </a>
+    </div>
+    <div class="shortcut">
+        <a href="https://docs.abinit.org/tutorial/">
+            <div class="icon-container">
+                <img alt="Pseudo and atomic data" class="shortcut-img" src="./img/Tutorials.png" title="Tutorials" />
+                <span class="title">Tutorials </span>
+            </div>
+        </a>
+    </div>
+    <div class="shortcut">
+        <a href="https://discourse.abinit.org/">
+            <div class="icon-container">
+                <img alt="Forum" class="shortcut-img" src="./img/Forum.png" title="Forum" />
+                <span class="title">Forum </span>
+            </div>
+        </a>
+    </div>
+    <div class="shortcut">
+        <a href="https://wiki.abinit.org/doku.php?id=start">
+            <div class="icon-container">
+                <img alt="Wiki" class="shortcut-img" src="./img/wiki.png" title="Wiki" />
+                <span class="title">Wiki </span>
+            </div>
+        </a>
+    </div>
+    <div class="shortcut">
+        <a href="https://www.abinit.org/packages">
+            <div class="icon-container">
+                <img alt="Download" class="shortcut-img" src="./img/Download.png" title="Download" />
+                <span class="title">Download </span>
+            </div>
+        </a>
+    </div>
+    <div class="shortcut">
+        <a href="https://www.abinit.org/packages">
+            <div class="icon-container">
+                <img alt="Compile" class="shortcut-img" src="./img/Compile.png" title="Compile" />
+                <span class="title">Compile </span>
+            </div>
+        </a>
+    </div>
+    <div class="shortcut">
+        <a href="https://github.com/abinit">
+            <div class="icon-container">
+                <img alt="GitHub" class="shortcut-img" src="./img/git.png"
+                     title="GitHub" />
+                <span class="title"></span>
+            </div>
+        </a>
+    </div>
+    <div class="shortcut">
+        <a href="https://gui.abinit.org/">
+            <div class="icon-container">
+                <img alt="GUI" class="shortcut-img" src="./img/gui.png"
+                     title="GUI" />
+                <span class="title"></span>
+            </div>
+        </a>
+    </div>
+    <div class="shortcut">
+        <a href="https://github.com/abinit/abipy">
+            <div class="icon-container">
+                <img alt="abipy" class="shortcut-img" src="./img/abipy.png"
+                     title="abipy" />
+                <span class="title"></span>
+            </div>
+        </a>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<div class="separator-line1"></div>
+
+<div class="benchmark" style="margin-left: 350px; margin-right: 200px;">
+    <div class="separator">&nbsp;</div>
+
+    <h2>Benchmarks</h2>
+
+    <div class="benchmark-item">
+        <img alt="GW screening test on Zr2Y2O7/C1 testcase on MN4 “highmem” compute nodes" class="benchmark-image" data-entity-type="file" data-entity-uuid="50b637a5-d4d2-473b-90a3-6278b63341c6" src="/sites/default/files/inline-images/GW_scaling954.png" width="500" height="936" loading="lazy">
+        <div class="benchmark-description">
+            <h5>Feature tested:</h5>
+            <p>Screening part of a GW calculation: optdriver 3</p>
+            <h5>System tested:</h5>
+            <p>11 atom Zr2Y2O7/C1 crystalline structure [nband=2000, nelect=88, empty(active)=1956; 36 q-points]</p>
+            <h5>Abinit version: 9.5.4</h5>
+            <h5>Compilation options:</h5>
+            <p>Fortran90 (and some C) parallelized with MPI with -O2 -xCORE-AVX512 -mtune=skylake Intel 2017.4 compilers and MPI libraries, with MKL BLAS/LAPACK &amp; DFTI-FFT, NetCDF/HDF5</p>
+            <h5>Hardware:</h5>
+            <p>MareNostrum 4 on the highmem compute node (7928 MB per core) which has 2 sockets Intel Xeon Platinum 8160 CPU with 24 cores each @2.10GHz for a total of 48 cores per node. L1d 32K; L1i cache 32K; L2 cache 1024K; L3 cache 33792K. 100 Gbit/s Intel Omni-Path HFI Silicon 100 Series PCI-E adapter.</p>
+            <h5>Source: <a href="https://gitlab.pop-coe.eu/documents/reports/-/raw/master/POP2-AR-157-Abinit.pdf" style="color: #F18F34;">Link</a></h5>
+        </div>
+    </div>
+
+    <div class="benchmark-item">
+        <img alt="CHEBFI versus LOBPCG" class="benchmark-image"
+             data-entity-type="file" src="./benchmark/chebfi32768.png"
+             style="vertical-align:middle" width="500">
+        <div class="benchmark-description">
+            <h5>Feature tested:</h5>
+            <p>Ground-state calculation - self-consistent DFT with different diagonalization algorithms.</p>
+            <h5>System tested:</h5>
+            <p>512 atoms of Ti with PAW pseudopotential [nband=4096]</p>
+            <h5>Abinit version: 7.10</h5>
+            <h5>Compilation options:</h5>
+            <p>We used the Intel MKL library for BLAS and LAPACK dense linear algebra, and the ELPA library for the dense eigenproblem in the Rayleigh–Ritz step (in our tests, we found it was about twice as fast as ScaLAPACK).</p>
+            <h5>Hardware:</h5>
+            <p><a href="https://www-hpc.cea.fr/en/complexe/tgcc-curie.htm" style="color: #F18F34;">Curie supercomputer</a> with 16-core Intel Nehalem-EX X7560 @ 2.26 GHz processors per node.</p>
+            <h5>Source: <a href="https://www.sciencedirect.com/science/article/pii/S0010465514003531?via%3Dihub" style="color: #F18F34;">A. Levitt and M. Torrent, Comput. Phys. Commun. 187, 98 (2015).</a></h5>
+        </div>
+    </div>
+
+    <div class="benchmark-item">
+        <img alt="Ti2O3" class="benchmark-image" data-entity-type="file"
+             src="./benchmark/ScalingTi2023.png" style="vertical-align:middle"
+             width="500">
+        <div class="benchmark-description">
+            <h5>Feature tested:</h5>
+            <p>Ground-state calculation - self-consistent DFT</p>
+            <h5>System tested:</h5>
+            <p>Ti metal, 3 atoms/cell | 80x80x80 dense k-mesh | 20 bands</p>
+            <h5>Abinit version: 9.8.1</h5>
+            <h5>Compilation options:</h5>
+            <p>Gnu 11.3 compiler with -g -O2 and MPI</p>
+            <h5>Hardware:</h5>
+            <p><a href="https://www.cenaero.be/fr/lucia-inauguration" style="color: #F18F34;">Lucia supercomputer</a> AMD EPYC 7513 32C 2.6GHz with Mellanox HDR Infiniband</p>
+            <p><a href="https://top500.org/system/180122/" style="color: #F18F34;">#245 HPC ranking</a></p>
+            <h5>Additional note:</h5>
+            <p>Until 512 cores only k-point parallelization is used while above there are additional parallelization levels on bands and fft, explaining the improved performance.</p>
+            <h5>Source: <a href="https://github.com/abinit/abinit_assets/blob/main/abinit_web_site/benchmarks/benchmark_Ti_dense_kmesh.tar" style="color: #F18F34;">Link</a></h5>
+        </div>
+    </div>
+
+    <div class="benchmark-item">
+        <img alt="LiSrH3-Eu" class="benchmark-image" data-entity-type="file"
+             src="./benchmark/Scaling-LiSrH3-2023.png"
+             style="vertical-align:middle" width="500">
+        <div class="benchmark-description">
+            <h5>Feature tested:</h5>
+            <p>Ground-state calculation - self-consistent DFT</p>
+            <h5>System tested:</h5>
+            <p>625 atoms supercell of LiSrH3 with one Eu(Sr) substitution | 1 k-point | 1024 bands | GGA+U on Eu-4f with PAW pseudos from Pseudo Dojo (JTH v1.1 PBE standard) | Paral over 2 spins, npbands, npfft, bandpp</p>
+            <h5>Abinit version: 9.8.1</h5>
+            <h5>Compilation options:</h5>
+            <p>Gnu 11.3 compiler with -g -O2 and MPI</p>
+            <h5>Hardware:</h5>
+            <p><a href="https://www.cenaero.be/fr/lucia-inauguration" style="color: #F18F34;">Lucia supercomputer</a> AMD EPYC 7513 32C 2.6GHz with Mellanox HDR Infiniband</p>
+            <p><a href="https://top500.org/system/180122/" style="color: #F18F34;">#245 HPC ranking</a></p>
+            <h5>Source: <a href="https://github.com/abinit/abinit_assets/blob/main/abinit_web_site/benchmarks/benchmark_defect_supercell.tar" style="color: #F18F34;">Link</a></h5>
+        </div>
+    </div>
+
+    <div class="benchmark-item">
+        <img alt="Ti-GPU" class="benchmark-image" data-entity-type="file" src="https://www.abinit.org/sites/default/files/2023-12/GPU-Jun2023.png" style="vertical-align:middle" width="500">
+        <div class="benchmark-description">
+            <h5>Feature tested:</h5>
+            <p>Ground-state calculation - self-consistent DFT - Comparison between GPU and CPU</p>
+            <h5>System tested:</h5>
+            <p>512 atoms of Ti with PAW pseudopotential | 1 k-point | 4096 bands | GGA with PAW pseudos from Pseudo Dojo (JTH v1.1 PBE standard)</p>
+            <h5>Abinit version: 9.9.3</h5>
+            <h5>Compilation options:</h5>
+            <p>gfortran 11.2.0 -g -O2 using OpenMPI 4.1.4, Cuda 11.8, Kokkos 3.7.00, and mkl 22.3</p>
+            <h5>Hardware:</h5>
+            <p>CPU AMD EPYC 7H12 2*64 cores and GPU 4*Nvidia A100 40Gb</p>
+        </div>
+    </div>
+
+    <div class="benchmark-item">
+        <img alt="Ti-GPU" class="benchmark-image" data-entity-type="file" src="https://www.abinit.org/sites/default/files/2023-12/Abinit-GPU2023.png" style="vertical-align:middle" width="500">
+        <div class="benchmark-description">
+            <h5>Feature tested:</h5>
+            <p>Ground-state calculation - self-consistent DFT - Comparison between GPU and CPU</p>
+            <h5>System tested:</h5>
+            <p>512 atoms of Ti with PAW pseudopotential | 1 k-point | 2048 bands | ecut = 5 Ha | GGA with PAW pseudos from Pseudo Dojo (JTH v1.1 PBE standard)</p>
+            <h5>Abinit version: 9.9.3</h5>
+            <h5>Compilation options:</h5>
+            <p>Compiler NVHPC 22.11 -g --use_fast_math --compiler-options=-O3 with openMP target + cuda</p>
+            <h5>Hardware:</h5>
+            <p>CPU AMD EPYC 7H12 2*64 cores per node and GPU 4*Nvidia A100 80Gb per node</p>
+        </div>
+    </div>
+</div>
+
+<script src="abinit_info_download.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>

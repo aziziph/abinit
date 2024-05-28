@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABINIT</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"  crossorigin="anonymous" />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./styles_download.css" rel="stylesheet"> <!-- Link to your
+  external CSS file -->
+</head>
+
+<body>
+<div id="topheader">
+    <div class="shortcut">
+            <div class="icon-container">
+                <img alt="ABINIT" class="shortcut-img" src="./logo/logo.png" title="" />
+                <span class="title"></span>
+            </div>
+    </div>
+    <div class="shortcut">
+        <a href="https://www.abinit.org/psp-tables">
+            <div class="icon-container">
+                <img alt="Pseudo and atomic data" class="shortcut-img" src="./img/Pseudos.png" title="Pseudo & atomic data" />
+                <span class="title">Pseudos &amp; PAW data</span>
+            </div>
+        </a>
+    </div>
+    <div class="shortcut">
+        <a href="https://docs.abinit.org/variables">
+            <div class="icon-container">
+                <img alt="input variables" class="shortcut-img" src="./img/input_variables.png" title="Input variables" />
+                <span class="title">Input variables </span>
+            </div>
+        </a>
+    </div>
+    <div class="shortcut">
+        <a href="https://docs.abinit.org/tutorial/">
+            <div class="icon-container">
+                <img alt="Pseudo and atomic data" class="shortcut-img" src="./img/Tutorials.png" title="Tutorials" />
+                <span class="title">Tutorials </span>
+            </div>
+        </a>
+    </div>
+    <div class="shortcut">
+        <a href="https://discourse.abinit.org/">
+            <div class="icon-container">
+                <img alt="Forum" class="shortcut-img" src="./img/Forum.png" title="Forum" />
+                <span class="title">Forum </span>
+            </div>
+        </a>
+    </div>
+    <div class="shortcut">
+        <a href="https://wiki.abinit.org/doku.php?id=start">
+            <div class="icon-container">
+                <img alt="Wiki" class="shortcut-img" src="./img/wiki.png" title="Wiki" />
+                <span class="title">Wiki </span>
+            </div>
+        </a>
+    </div>
+    <div class="shortcut">
+        <a href="https://www.abinit.org/packages">
+            <div class="icon-container">
+                <img alt="Download" class="shortcut-img" src="./img/Download.png" title="Download" />
+                <span class="title">Download </span>
+            </div>
+        </a>
+    </div>
+    <div class="shortcut">
+        <a href="https://www.abinit.org/packages">
+            <div class="icon-container">
+                <img alt="Compile" class="shortcut-img" src="./img/Compile.png" title="Compile" />
+                <span class="title">Compile </span>
+            </div>
+        </a>
+    </div>
+    <div class="shortcut">
+        <a href="https://github.com/abinit">
+            <div class="icon-container">
+                <img alt="GitHub" class="shortcut-img" src="./img/git.png"
+                     title="GitHub" />
+                <span class="title"></span>
+            </div>
+        </a>
+    </div>
+    <div class="shortcut">
+        <a href="https://gui.abinit.org/">
+            <div class="icon-container">
+                <img alt="GUI" class="shortcut-img" src="./img/gui.png"
+                     title="GUI" />
+                <span class="title"></span>
+            </div>
+        </a>
+    </div>
+    <div class="shortcut">
+        <a href="https://github.com/abinit/abipy">
+            <div class="icon-container">
+                <img alt="abipy" class="shortcut-img" src="./img/abipy.png"
+                     title="abipy" />
+                <span class="title"></span>
+            </div>
+        </a>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<div class="separator-line1"></div>
+
+<div class="field field--name-body field--type-text-with-summary field--label-hidden field--item" style="margin-left: 350px; margin-right: 200px;">
+    <h2>Run Abinit in a Virtual Machine</h2>
+
+    <hr align="left">
+    <h3><u><a href="https://hub.docker.com" style="color: #F18F34;">Docker Hub</a></u></h3>
+
+    <ol>
+        <li><a href="https://hub.docker.com/repository/docker/jmbeuken/abinit/general" style="color: #F18F34;">Version 9.4.2 compiled with GNU 9.3 and OpenMPI; included tools: agate/qagate, abipy, abigui, ...</a></li>
+        <li><a href="https://hub.docker.com/r/garo/abinit" style="color: #F18F34;">Slow version of abinit</a> with limited possibilities. Only useful for debugging (old)</li>
+        <li>Base images for <a href="https://hub.docker.com/r/yoshidalab/abinit" style="color: #F18F34;">xenonpy project (version 8.10.3 with cuda)</a> (<a href="https://hub.docker.com/r/yoshidalab/abinit/dockerfile" style="color: #F18F34;">Dockerfiles</a>)</li>
+    </ol>
+
+    <h3><u style="color: black;">ETSF softwares</u></h3>
+
+    <p>In order to run <a href="https://www.etsf.eu" style="color: #F18F34;">ETSF</a> softwares (Yambo, DP/EXC, ABINIT, QE, ...) without the hassle of installing the codes,<br>
+    we have customized a <a href="https://www.etsf.eu/ETSF_QM.ova" style="color: #F18F34;">virtual machine</a> (5.5Gb, we are looking at lighter alternatives) - many thanks to the <a href="https://quantum-mobile.readthedocs.io/en/latest/" style="color: #F18F34;">QuantumMobile</a> team!<br>
+    To use the virtual machine:</p>
+
+    <ol>
+        <li>Install <a href="https://www.virtualbox.org/" style="color: #F18F34;">VirtualBox</a> on your laptop</li>
+        <li>Download the virtual machine ova file, load it in VirtualBox (to do this go to File-&gt;Import Appliance), and run it.<br>
+        [We have tested successfully the VM on virtualbox v.6; previous versions might not work].</li>
+    </ol>
+
+    <p>You should now have a working Linux environment with all the above codes installed.</p>
+
+    <h3><u style="color: black;">Quantum Mobile</u></h3>
+
+    <p><a href="https://quantum-mobile.readthedocs.io/en/latest/" style="color: #F18F34;">Quantum Mobile</a> provides a uniform environment for quantum mechanical materials simulations.</p>
+</div>
+
+
+
+<script src="abinit_info_download.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>

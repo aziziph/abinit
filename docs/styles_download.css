@@ -245,3 +245,7 @@ body {
   top: 250px; /* Adjust the distance from the bottom */
   left: 400px;
 }
+.content-margin {
+    margin-left: 200px;
+    margin-right: 200px;
+}
